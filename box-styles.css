@@ -1,0 +1,52 @@
+/* box-styles.css */
+.main-content {
+  padding: 20px;
+}
+
+.box-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 5 columns */
+  gap: 40px; /* Gap between boxes */
+}
+
+.box {
+  background-color: #f7f7f7; /* Light gray background */
+  border: 2px solid #ddd; /* Gray border */
+  padding: 20px; /* Increased padding for more height */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.2s; /* Add a smooth transition effect */
+}
+
+.box:hover {
+  transform: scale(1.05); /* Zoom in slightly on hover */
+}
+
+.images{
+  max-width: 100%; /* Make images responsive */
+  height: auto /* Auto height to maintain aspect ratio */
+}
+
+.file-title {
+  margin: 10px 0; /* Adjust title margin for better spacing */
+  font-size: 18px; /* Increase font size */
+  color: #333; /* Darken title color */
+  cursor: pointer;
+}
+
+.rating {
+  color: #f39c12; /* Orange color for rating */
+  font-weight: bold;
+  margin-top: 5px; /* Add space above rating */
+}
+
+.details {
+  margin-top: 10px; /* Add more spacing for details */
+  color: #666; /* Gray color for details */
+}
+.details a {
+  font-style: italic;
+}

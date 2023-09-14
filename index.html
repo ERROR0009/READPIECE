@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="box-styles.css"> <!-- Add a link to your box styles CSS -->
+  <link rel="stylesheet" href="sidebar-styles.css">
+  <title>LOL</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+  <div class="background-container"></div>
+  <div class="header">
+    <div class="Logo" id="home">
+      <p class="logo-text">ReadPiece</p>
+    </div>
+    <div class="ceanter">
+      <input type="text" id="searchInput" placeholder="SEARCH">
+      <div class="se" id="searchButton">
+        <img src="img/search_FILL0_wght400_GRAD0_opsz48.png" alt="">
+      </div>
+      
+    </div>
+    <div class="right">
+      <div class="message">
+        <a class="trend"> TRENDING</a>
+        <a class="how">HOW TO DOWNLOAD ??</a>
+      </div>
+      <div class="mode">
+        <img src="img/dark_mode_FILL0_wght400_GRAD0_opsz48.png" alt="mode">
+      </div> 
+    </div>
+  </div>
+
+  <main class="main-content">
+    <div class="box-grid">
+      <!-- Repeat the following structure for each box -->
+      <div class="box">
+        <a href="one-piece/page1.html" style="text-decoration: none;">
+          <img class="images" src="img/one-piece.jpg" alt="File Image">
+          <h3 class="file-title">File Title 1</h3>
+        </a>
+        <div class="rating">Rating: 4.5</div>
+        <div class="details">
+        </div>
+      </div>
+      <!-- Repeat more boxes as needed -->
+      <!-- Continue repeating for a total of 3 boxes in this row -->
+      <div class="box">
+        <a href="one-piece/page1.html" style="text-decoration: none;">
+          <img class="images" src="img/one-piece.jpg" alt="File Image">
+          <h3 class="file-title">File Title 2</h3>
+        </a>
+        <div class="rating">Rating: 3.8</div>
+        <div class="details">
+        </div>
+      </div>
+      <div class="box">
+        <a href="one-piece/page1.html" style="text-decoration: none;">
+          <img class="images" src="img/one-piece.jpg" alt="File Image">
+          <h3 class="file-title">File Title 3</h3>
+        </a>
+        <div class="rating">Rating: 4.0</div>
+        <div class="details">
+          
+        </div>
+      </div>
+      <div class="box">
+        <a href="one-piece/page1.html" style="text-decoration: none;">
+          <img class="images" src="img/one-piece.jpg" alt="File Image">
+          <h3 class="file-title">File Title 4</h3>
+        </a>
+        <div class="rating">Rating: 4.0</div>
+        <div class="details">
+          <a href=""></a>
+          <a href=""> </a>
+        </div>
+      </div>
+      <!-- Repeat more boxes for the second row -->
+      <!-- Continue repeating for additional rows of boxes -->
+    </div>
+  </main>
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <div class="header-top">
+        <button class="toggle-btn" id="toggleSidebarBtn">
+          <img src="img/arrow_back_ios_FILL0_wght400_GRAD0_opsz48.png" alt="Toggle Sidebar">
+        </button>
+        <h2>Trending Files</h2>
+        <button id="closeSidebarBtn">Close</button>
+      </div>
+    </div>
+    <ul class="trending-list">
+      <!-- Trending file 1 -->
+      <li class="trending-item">
+        <div class="trending-number" style="--number-color: #f39c12;">1</div>
+        <div class="trending-content">
+          <div class="trending-image">
+            <img src="img/bilal-o-ljXekphwr40-unsplash (1).jpg" alt="File 1">
+          </div>
+          <div class="file-details">
+            <h3 class="file-title">File Title 1</h3>
+            <div class="rating">Rating: 4.5</div>
+          </div>
+        </div>
+      </li>
+      <!-- Repeat for files 2 to 10 -->
+    </ul>
+  </aside>
+
+  <footer class="footer">
+    <!-- Your footer content -->
+  </footer>
+
+  <script>
+    
+    const toggleSidebarBtn = document.getElementById("toggleSidebarBtn");
+    const closeSidebarBtn = document.getElementById("closeSidebarBtn");
+    const sidebar = document.getElementById("sidebar");
+  
+    toggleSidebarBtn.addEventListener("click", () => {
+      sidebar.classList.toggle("active");
+    });
+  
+    closeSidebarBtn.addEventListener("click", () => {
+      sidebar.classList.remove("active");
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
