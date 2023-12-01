@@ -1,0 +1,139 @@
+@keyframes moveBackground {
+  0%, 100% {
+    background-position: 0% 0%; /* Start position at the top-left corner */
+  }
+  50% {
+    background-position: 100% 100%; /* Transition to the bottom-right corner at 50% */
+  }
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff; /* Text color */
+  background-color: #F0FFFF; /* Background color in case the image doesn't cover the entire area */
+  height: 100%; /* Set the body height to 100% */
+  width: 100%;
+}
+
+body::-webkit-scrollbar-track{
+  width: 1px;
+}
+body::-webkit-scrollbar-button{
+  width: 1px;
+}
+.background-animation {
+  animation: moveBackground 60s linear infinite;
+  background: linear-gradient(
+    to bottom right,
+    #2196F3,
+    #03A9F4,
+    #00BCD4,
+    #009688,
+    #4CAF50
+  );
+  background-size: 200% 200%;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  background-color: #333; /* Background color for the header */
+  color: #fff; /* Text color */
+  padding: 20px; /* Add padding for spacing */
+  background-color: #333; /* Background color for the header */
+  box-sizing: border-box; /* Include padding and border in the element's total width */
+  overflow: hidden; /* Hide any overflowing content */
+} 
+
+/* Style for the logo text */
+.logo-text {
+  font-family: 'Arial', sans-serif; /* Choose your desired font */
+  font-size: 24px; /* Adjust the font size */
+  font-weight: bold; /* Make it bold */
+  text-transform: uppercase; /* Uppercase the text */
+  letter-spacing: 2px; /* Adjust letter spacing */
+  margin: 0; /* Remove default margin */
+  cursor: pointer;
+}
+
+/* Optionally, add some hover effects */
+.logo-text:hover {
+  color: #ff8c20; /* Change text color on hover */
+  text-decoration: none;
+}
+
+.ceanter {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+.ceanter input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: #f1f1f1;
+  font-size: 16px;
+  color: #333;
+  outline: none;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.ceanter input::placeholder {
+  color: #333;
+  padding-left: 6px;
+  size: 1px;
+}
+.ceanter input:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.ceanter input:focus {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
+.se {
+  margin-left: 5px;
+}
+.se img {
+  width: 24px;
+  height: 24px;
+}
+.menu{
+  height: 40px;
+}
+.right {
+  display: flex;
+  align-items:center;
+  justify-content: right;
+  padding-right: 30px;
+}
+.mode img {
+  height: 35px;
+  width: auto;
+}
+.trend , .how{
+  margin-right: 20px;
+}
+.important-for-all {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+.important-for-all a {
+  text-decoration: none;
+
+}
